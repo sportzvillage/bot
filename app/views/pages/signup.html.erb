@@ -1,0 +1,153 @@
+<div class="contain">
+
+<div class="signupform"> 
+<div class="heading"> Signup Form </div>
+	
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div class="field">
+    <div>Full Name</div>
+    <%= f.text_field :name, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <div>Contact Number</div>
+    <%= f.text_field :number, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <div>Age</div>
+    <%= f.text_field :age, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <div>Email</div>
+    <%= f.email_field :email, autofocus: true %>
+  </div>
+
+  
+
+  
+
+  
+
+  <div class="field">
+    <div>School</div>
+    <%= f.text_field :school, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <div>Standard</div>
+    <%= f.text_field :standard, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <div>Section</div>
+    <%= f.text_field :section, autofocus: true %>
+</div>
+
+<div class="field">
+    <div>Password</div>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %>
+    <%= f.password_field :password, autocomplete: "off" %>
+  </div>
+
+  <div class="field">
+    <div>Confirm Password</div>
+    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+  </div>
+
+<div class="heading"> Parents Details </div>
+
+	<div class="field">
+    <div>Name</div>
+    <%= f.text_field :parentname, autofocus: true %>
+</div>
+
+<div class="field">
+    <div>Relationship with mentioned person</div>
+    <%= f.text_field :relationship, autofocus: true %>
+</div>
+
+<div class="field">
+    <div>Contact Number</div>
+    <%= f.text_field :parentnumber, autofocus: true %>
+</div>
+
+<div class="field">
+    <div>Email</div>
+    <%= f.text_field :parentemail, autofocus: true %>
+</div>
+
+
+  
+  <div class="actions">
+    <%= f.submit "Sign up",class: "btn btn-submit" %>
+  </div>
+<% end %>
+
+</div>
+</div>
+
+<style type="text/css">
+
+.signupform{
+	text-align: center;
+	width:600px;
+	height:auto;
+	border:1px solid black;
+	text-align: center;
+	padding-top: 0;
+	border-radius: 20px;
+	margin-bottom: 50px;
+
+
+}
+
+.contain{
+	width:100%;
+	
+	text-align: center;
+	padding-right:auto;
+	padding-left:200px;
+	padding-top: 70px;
+}
+
+
+
+
+.heading{
+	width:100%;
+	height:50px;
+	background: #71abd5;
+	font-size: 200%;
+	border-radius: 20px;
+
+}
+.field{
+	margin-top: 10px;
+	margin-bottom: 10px; 
+	font-weight: bold;
+
+}
+
+.btn-submit{
+              background-color: #71abd5;
+              border-radius: 6px; 
+              color:white;
+              margin-top: 10px;
+              margin-bottom: 10px;
+              width:100px;
+              font-size:150%;
+            }
+            .btn-submit:hover,
+.btn-submit:focus,
+.btn-submit:active {
+    color: #fff;
+    background-color: #012d4d;
+}
+</style>

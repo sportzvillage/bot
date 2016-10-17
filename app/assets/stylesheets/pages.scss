@@ -1,0 +1,42 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+ 	
+  .btn-primary {
+    float:right;
+    clear:top;
+    clear:bottom;
+    background-color: #71abd5;
+    margin-right: 10px;
+    margin-top:10px;
+    font-size:200%;
+    border-radius: 12px; 
+  }
+
+
+
+  span {
+  clear:both;
+  }
+ 
+
+  .left-text p{
+    background-color: #eeece2;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-left:10px;
+    float:left;
+    width:auto;
+    height:auto;
+    font-size:200%;
+    padding: 5px 5px 5px 5px;
+    clear:both;
+    border-radius: 12px;
+  }
+
+  .landing-page{
+  	text-align:center;
+  	height :600px;
+  }
+
+ 

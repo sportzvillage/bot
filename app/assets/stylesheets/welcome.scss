@@ -1,0 +1,83 @@
+.header {
+	background-image: url('http://www.studyisland.com/sites/studyisland.com/files/content/images/SI-Learning-For-Everyone.jpg');
+	text-align : center;
+
+    background-repeat:   no-repeat;
+    background-position: center;
+	height: 650px;
+	width: 100%;
+
+
+}
+
+.row{
+	text-align:center;
+	padding-top:30px;
+
+
+}
+
+.btn-head{
+	background-color: #71abd5;
+    margin-right: 10px;
+    margin-top:10px;
+    font-size:200%;
+    border-radius: 12px;
+    color:black;
+    
+}
+
+.btn-head:hover,
+.btn-head:focus,
+.btn-head:active {
+    color: #fff;
+    background-color: #012d4d;
+}
+
+
+.container{
+	
+	padding:0;
+	width: 100%;
+}
+
+body{
+	
+	padding-left:100px;
+	padding-right:100px;}
+
+.ui-widget-header,.ui-state-default, ui-button{
+            background:white;
+            border: 1px solid white;
+            text-align:center;
+            color: white  ;
+            font-size:150%;
+            }
+            #contactus,#signin{
+              background: white;
+              text-align: center;
+            }
+            
+            
+            .contactnumber{
+              text-align: center;
+              font: bold;
+            }
+            .btn-submit{
+              background-color: #71abd5;
+              border-radius: 6px; 
+              color:white;
+              margin-top: 10px;
+              margin-bottom: 10px;
+              width:100px;
+              font-size:150%;
+            }
+            .form-text{
+              font-weight: bold;
+            }
+            .btn-submit:hover,
+.btn-submit:focus,
+.btn-submit:active {
+    color: #fff;
+    background-color: #012d4d;
+}
