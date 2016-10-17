@@ -1,5 +1,10 @@
 <div class="header" >
-    <div class="row" >
+  <div class="intro">
+    <div class="col-sm-6" id="slamhead">SLAM</div>
+    <div class="col-sm-6" id="slamsubhead">Class 7 Geography through Sports</div>
+    <div class="col-sm-12" id = "startbtn"><button type="button" class="btn btn-head btnstart" >Lets Start !</button></div>
+  </div>
+    <div class="startuprow" >
     	<div class="col-sm-4" >
           <% if user_signed_in? %>
                           <%= link_to "Logout", destroy_user_session_path,:method => :delete %>
@@ -83,19 +88,6 @@
 
 
 
-<div class = "starting_text">
-<div class = "left-text">
-    <p>Hello</p>
-    <p>What are you looking to learn ?</p>
-</div>
-
-<span></span>
-<div class="col-sm-12">
-    <button type="button" class="btn btn-primary">Maths</button>
-    <button type="button" class="btn btn-primary">Physics</button>
-    <button type="button" class="btn btn-primary">Chemistry</button>
-</div>
-</div>
 
 
 
@@ -124,6 +116,35 @@
               background: white;
               text-align: center;
             }
+            .intro{
+              float:right;
+              height:100px;
+              width:100%;
+              padding:40px;
+            }
+            #slamhead{
+              font-size: 70px;
+              float:left;
+              color: #012d4d;
+              font-weight: bold;
+            }
+            #slamsubhead{
+              font-size: 30px;
+              margin-top:30px;
+              color:black;
+            }
+            #startbtn{
+              
+              height:300px;
+              padding-top: 110px;
+
+            }
+            .btnstart{background-color: #2CDE10;color:black;}
+            .startuprow{
+              height:300px;
+
+              padding-top: 50px;
+            }
       </style>
       <!-- Javascript -->
       <script>
@@ -151,6 +172,15 @@
             });
             $( "#opener-4" ).click(function() {
                $( "#signin" ).dialog( "open" );
+            });
+            $(function() {
+            $(".startuprow").hide();
+            $(".btnstart").click(function() {
+              $(".intro").hide();
+              $(".startuprow").show();
+
+            });
+
             });
          });
 
